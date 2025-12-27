@@ -62,7 +62,7 @@ pipeline {
 
                         git add k8s/deployment.yml
                         git diff --cached --quiet || git commit -m "Updated image to ${IMAGE_TAG}"
-                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/stealthcoderX/Designed-and-implemented-a-production-grade-CI-CD-pipeline-using-Jenkins-Multibranch-and-GitOps.git main
+                        git push https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/stealthcoderX/Designed-and-implemented-a-production-grade-CI-CD-pipeline-using-Jenkins-Multibranch-and-GitOps..git main
                         """
                     }
                 }
